@@ -1,0 +1,19 @@
+<?php
+
+
+$name = "Harry";
+
+$age = 28;
+
+
+var_dump($name);
+
+echo $name ."\n";
+
+var_dump($age);
+
+$name =null;
+
+var_dump($name);
+
+?>
