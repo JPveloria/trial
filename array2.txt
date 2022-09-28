@@ -1,0 +1,17 @@
+<?php
+    $cities = array("Tokyo", "Mexico City", "New York City", "Mumbai", "Seoul", "Shanghai", "Lagos", "Buenos Aires", "Cairo", "London");
+    
+    foreach ($cities as $city) {
+	 		echo $city . ", ";
+	 	}
+	 	for ($i = 0; $i < COUNT($cities); $i++) {
+	 			sort($cities);
+	 			echo $cities{$i}  . ", ";
+	 		}
+	 		
+	 		array_push($cities, "Los Angeles", "Calcutta", "Osaka", "Beijing");
+	 		sort($cities);
+	 		for ($x = 0; $x < COUNT($cities); $x++) {
+	 			echo "{$cities{$x}}" . ", ";
+	 		}
+?>
