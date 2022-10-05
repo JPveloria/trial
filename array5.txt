@@ -1,0 +1,41 @@
+<?php
+    $arr = array(25,47,42,56,32);
+    $odd = array();
+    $even = array();
+    
+    echo "Orginal array: \n";
+    $size = count($arr);
+    
+    for ($x = 0; $x < $size; $x++) 
+    {
+        echo "$arr[$x] ";
+    }
+    $y = 0;
+    $z = 0;
+    
+    for ($x = 0; $x < $size; $x++) 
+    {
+        if ($arr[$x] % 2 == 0) 
+        {
+            $even[$y] = $arr[$x];
+            $y++;
+        } 
+        else 
+        {
+            $odd[$z] = $arr[$x];
+            $z++;
+        }
+    }
+    echo "\nArray of even numbers : \n";
+    
+    for ($x = 0; $x < $y; $x++) 
+    {
+        echo $even[$x]. " ";
+    }
+    echo "\nArray of odd numbers : \n";
+    
+    for ($x = 0; $x < $z; $x++) 
+    {
+        echo $odd[$x] . " ";
+    }
+?>

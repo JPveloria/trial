@@ -1,0 +1,9 @@
+<?php
+    $arr = array(25,12,43);
+    print_r($arr);
+    
+    echo "The frequency of all elements of an array : ";
+    $values = array_count_values($arr);
+    
+    print_r($values);
+?>
