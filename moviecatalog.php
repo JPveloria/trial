@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Movie Catalog</title>
-</head>
-<body>
-<h1>MOVIES</h1>
-
 <?Php
 
-$dir = 'C:\xampp\htdocs\catalog\movies';
+$dir = 'movies';
 $files = scandir($dir);
 
 //pre_r($files);
@@ -42,12 +34,12 @@ for ($i = 0; $i <count($files); $i++){
 
 }
 
-echo "<table id = 'ArrayProject' cellpadding = 50>";
+echo "<table id = 'movies' cellpadding = 50>";
 echo "<tr class = 'odd'>";
 
 foreach ($movies as $movie_name => $info){
 	$content = "<td><span class = 'name'> $movie_name</span><br />"
-	. "<img src = 'ArrayProject/$info[image]'><br />"
+	. "<img src = 'movies/$info[image]'><br />"
 	. "<span class = 'year'>( $info[year] ) </span></td>";
 	echo $content;
 }
@@ -65,7 +57,7 @@ echo "</tr></table>";
 		}
 		tr.header{
 			background-color: #111f4e;
-			color: "white";
+			color: #fff;
 			font:  bold 11pt Calibri;
 		}
 		tr.odd{
@@ -76,13 +68,15 @@ echo "</tr></table>";
 		}
 		img {
 			padding:  10px;
+			width: 200px;
 		}
 		td{
 			text-align: center;
+			color: white;
 		}
 		span.year{
 			color: #ccc;
-			font-size: 26px;
+			font-size: 18px;
 		}
 		span.name{
 			font-size: 26px;
@@ -92,6 +86,3 @@ echo "</tr></table>";
 			padding: 0
 		}
 </style>
-
-</body>
-</html>
